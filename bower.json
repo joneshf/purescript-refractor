@@ -1,0 +1,12 @@
+{
+  "name": "purescript-refractor",
+  "version": "0.0.0",
+  "description": "Collection of optical functions. (Lenses, prisms, etc)",
+  "license": "MIT",
+  "dependencies": {
+    "purescript-either": "~0.1.4",
+    "purescript-maybe": "~0.2.1",
+    "purescript-tuples": "~0.2.2",
+    "purescript-lens": "split"
+  }
+}
