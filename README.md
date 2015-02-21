@@ -2,30 +2,71 @@
 
 ## Module Optic.Refractor.Lens
 
-### Values
+#### `_1`
 
-    _1 :: forall a b c. Lens (Tuple a c) (Tuple b c) a b
+``` purescript
+_1 :: forall a b c. Lens (Tuple a c) (Tuple b c) a b
+```
 
-    _2 :: forall a b c. Lens (Tuple a b) (Tuple a c) b c
 
-    x :: forall b a r. Lens { x :: a | r } { x :: b | r } a b
+#### `_2`
 
-    y :: forall b a r. Lens { y :: a | r } { y :: b | r } a b
+``` purescript
+_2 :: forall a b c. Lens (Tuple a b) (Tuple a c) b c
+```
 
-    z :: forall b a r. Lens { z :: a | r } { z :: b | r } a b
+
+#### `x`
+
+``` purescript
+x :: forall b a r. Lens { x :: a | r } { x :: b | r } a b
+```
+
+
+#### `y`
+
+``` purescript
+y :: forall b a r. Lens { y :: a | r } { y :: b | r } a b
+```
+
+
+#### `z`
+
+``` purescript
+z :: forall b a r. Lens { z :: a | r } { z :: b | r } a b
+```
+
 
 
 ## Module Optic.Refractor.Prism
 
-### Values
+#### `_Left`
 
-    _Just :: forall a b. Prism (Maybe a) (Maybe b) a b
+``` purescript
+_Left :: forall a b c. Prism (Either a c) (Either b c) a b
+```
 
-    _Left :: forall a b c. Prism (Either a c) (Either b c) a b
 
-    _Nothing :: forall a b. PrismP (Maybe a) Unit
+#### `_Right`
 
-    _Right :: forall a b c. Prism (Either a b) (Either a c) b c
+``` purescript
+_Right :: forall a b c. Prism (Either a b) (Either a c) b c
+```
+
+
+#### `_Just`
+
+``` purescript
+_Just :: forall a b. Prism (Maybe a) (Maybe b) a b
+```
+
+
+#### `_Nothing`
+
+``` purescript
+_Nothing :: forall a b. PrismP (Maybe a) Unit
+```
+
 
 
 
