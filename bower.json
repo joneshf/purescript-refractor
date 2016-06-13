@@ -4,6 +4,6 @@
   "description": "Collection of optical functions. (Lenses, prisms, etc)",
   "license": "MIT",
   "dependencies": {
-    "purescript-lens": "master"
+    "purescript-lens": "^0.9.0"
   }
 }
